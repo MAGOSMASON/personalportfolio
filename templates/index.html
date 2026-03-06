@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Magos | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="hero" id="hero">
+        <img class="bg-art" src="{{ url_for('static', filename='img/bg-art.png') }}" alt="" aria-hidden="true">
+        <div class="ocean-blocker" aria-hidden="true"></div>
+        <div class="avatar-wrap" id="avatarWrap">
+            <img class="avatar-body" src="{{ url_for('static', filename='img/avatar-body.png') }}" alt="" aria-hidden="true">
+            <img class="avatar-head" src="{{ url_for('static', filename='img/avatar-head.png') }}" alt="Mason Magos avatar">
+            <img class="avatar-hand hand-left" src="{{ url_for('static', filename='img/avatar-hand.png') }}" alt="" aria-hidden="true">
+            <img class="avatar-hand hand-right" src="{{ url_for('static', filename='img/avatar-hand.png') }}" alt="" aria-hidden="true">
+        </div>
+        <canvas id="oceanCanvas"></canvas>
+        <section class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <a href="#projects" class="cta">View Projects</a>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
